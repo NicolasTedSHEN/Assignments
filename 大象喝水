@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int h,r;
+    double pi=3.14159;
+    double v,ans;
+
+    scanf("%d%d",&h,&r);
+    v=pi*r*r*h;
+    ans=20*1000/v;
+    ans=ceil(ans);
+    printf("%d\n",(int)ans);
+    return 0;
+}
