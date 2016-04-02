@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+ {
+  int maxodd=0,minEven=100;  
+    int i;  
+    for(i=0;i<6;i++)  
+    {  
+        int temp;  
+        cin >> temp ;  
+        if(temp%2)  
+        {  
+            if(temp>maxodd)  
+            maxodd=temp;  
+        }  
+        else 
+        {  
+            if(temp<minEven)  
+            minEven=temp;  
+        }  
+    }  
+    if(maxodd>minEven)  
+        cout << maxodd-minEven << endl;  
+    else  
+        cout << minEven-maxodd << endl;  
+    return 0;  
+}
